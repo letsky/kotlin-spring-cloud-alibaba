@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: cloud-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        namespace: f41d5384-16da-4d47-946c-616edc1b9532
+        cluster-name: shanghai
+        metadata:
+          version: v1
+    sentinel:
+      transport:
+        dashboard: localhost:8090
